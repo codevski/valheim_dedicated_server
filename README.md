@@ -69,9 +69,9 @@ If you set your `SERVER_PORT=2456`, this mean you will be using ports 2456, 2457
 
 Currently there are 2 volumes you will need to mount:
 
-`/home/steam/server_data` _This is the install directory for the server from steamcmd_
+/data: `/home/steam/server_data` _This is the install directory for the server from steamcmd_
 
-`/home/steam/.config/unity3d/IronGate/Valheim` _This is where the game stores your world files and banlist, etc._
+/scripts: `/home/steam/.config/unity3d/IronGate/Valheim` _This is where the game stores your world files and banlist, etc._
 
 Be sure to create the directories on your host machine before mounting them with Docker or this will result in a _Disk Write Failure_ from steamcmd.
 
