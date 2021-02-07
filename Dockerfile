@@ -2,7 +2,7 @@ FROM debian:buster
 
 # download requirements
 RUN apt-get -y update && \
-  apt-get -y install lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 curl && \
+  apt-get -y install lib32gcc1 lib32stdc++6 libsdl2-2.0 curl && \
   apt-get clean && \
   rm -rf /var/lib/{apt,dpkg,cache,log}/
 
